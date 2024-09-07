@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mihir's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body class="dark-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mihir</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-light" id="theme-toggle-btn" onclick="toggleTheme()">☀️ Light Mode</button>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 bg-primary text-light">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Profile Picture" class="rounded-circle profile-img mb-4">
+            <h1>Mihir Chowdhury</h1>
+            <p id="header-text"></p>
+        </div>
+    </header>
+
+    <!-- About Me Section with Typing Animation -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p id="about-text"></p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card gradient-custom move-card">
+                        <div class="card-body text-white">
+                            <i class="fas fa-car fa-2x mb-3"></i>
+                            <h5 class="card-title">Traffic Signal Violation Detection System</h5>
+                            <p class="card-text">Using Computer Vision to detect traffic signal violations.</p>
+                            <a href="https://github.com/mhr1812/Traffic-Signal-Violation-Detection-System-Using-Computer-Vision" target="_blank" class="btn btn-light">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card gradient-custom-2 move-card">
+                        <div class="card-body text-white">
+                            <i class="fas fa-chart-line fa-2x mb-3"></i>
+                            <h5 class="card-title">Exploratory Data Analysis of WhatsApp Chat</h5>
+                            <p class="card-text">Analyzing WhatsApp chat data to extract insights.</p>
+                            <a href="https://jovian.ai/mihirchowdhury05/zerotopandas-course-project-whatsapp-chat-analysis" target="_blank" class="btn btn-light">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card gradient-custom-3 move-card">
+                        <div class="card-body text-white">
+                            <i class="fas fa-building fa-2x mb-3"></i>
+                            <h5 class="card-title">Bank Application</h5>
+                            <p class="card-text">A comprehensive banking system application.</p>
+                            <a href="https://github.com/mhr1812/Bank-Application" target="_blank" class="btn btn-light">View Application</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Education Section -->
+  <section id="education" class="container py-5">
+    <h2 class="text-center">Education</h2>
+    <div class="main-timeline-4 text-white">
+      <div class="timeline-4 left-4">
+        <div class="card gradient-custom">
+          <div class="card-body p-4">
+            <h4>M.Tech in Computer Science and Engineering</h4>
+            <p>International Institute of Information Technology Hyderabad</p>
+            <p class="small text-black-50 mb-4">August 2024 - Present</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-4 right-4">
+        <div class="card gradient-custom-4">
+          <div class="card-body p-4">
+            <h4>B.Tech in Computer Science and Engineering</h4>
+            <p>Shri Ramdeobaba College of Engineering and Management Nagpur</p>
+            <p class="small text-black-50 mb-4">August 2020 - May 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--
+  <div class="col-md-4 mb-4">
+                    <div class="card gradient-custom-2 move-card">
+                        <div class="card-body text-white">
+                            <i class="fas fa-chart-line fa-2x mb-3"></i>
+                            -->
+  
+  <section id="hobbies" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Hobbies</h2>
+    <div class="row">
+      <div class="col-md-4 col-md-4">
+        <div class="card gradient-custom mb-4">
+          <div class="card-body">
+            <i class="fas fa-swimmer fa-2x mb-3"></i> 
+            <h4>Swimming</h4>
+            <p>Enjoy swimming in my free time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card gradient-custom mb-4">
+          <div class="card-body">
+            <i class="fas fa-book fa-2x mb-3"></i> <!-- Books icon -->
+            <h4>Books</h4>
+            <p>I love reading books, especially self-help and personal development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card gradient-custom-4 mb-4">
+          <div class="card-body">
+            <i class="fas fa-tv fa-2x mb-3"></i> \
+            <h4>Watching Tennis</h4>
+            <p>Enjoy watching tennis matches during my leisure time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+     <section id = "contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="text-center">
+      <a href="https://github.com/mhr1812" class="text-light mx-2" target="_blank">
+        <i class="fab fa-github fa-3x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mihir-chowdhury/" class="text-light mx-2" target="_blank">
+        <i class="fab fa-linkedin fa-3x"></i>
+      </a>
+      <a href="https://www.instagram.com/mhr.one?igsh=MXFvZXp6M3N5cjRyMw==" class="text-light mx-2" target="_blank">
+        <i class="fab fa-instagram fa-3x"></i>
+      </a>
+      <a href="mailto:mihirchowdhury05@gmail.com" class="text-light mx-2">
+        <i class="fas fa-envelope fa-3x"></i>
+      </a>
+    </div>
+  </section>
+  
+   <section id="location" class="py-5 bg-light">
+        <h2 class="text-center mb-4">My Location</h2>
+        <div class="text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.309955400232!2d78.34724627398907!3d17.444872683452193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bce0a03f17ff82b%3A0x9d02e89b98deb496!2sIIIT-H%20%7C%20The%20International%20Institute%20of%20Information%20Technology%20-%20Hyderabad!5e0!3m2!1sen!2sin!4v1725707912107!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-primary text-light">
+        <p>&copy; 2024 Mihir's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and custom JS -->
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
